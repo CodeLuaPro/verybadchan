@@ -1,0 +1,52 @@
+body {
+  background-color: black;
+  font-family: monospace;
+  margin: 0;
+  color: greenyellow;
+}
+h5 {
+  margin: 0;
+}
+
+textarea {
+  background: lightgrey;
+}
+
+ul {
+  margin: 0;
+}
+
+.main-header {
+  margin: 5px;
+  font-size: 16px;
+}
+
+.main-container {
+  text-align: center;
+}
+
+.image-board-container {
+  padding: 10px;
+  display: flex;
+  width: 650px;
+  margin: auto;
+
+  border: 2px solid greenyellow;
+}
+
+.select-theme {
+  position:absolute;
+  top:100vh;
+  transform:translateY(-100%);
+}
+
+.uploaded-image-div {
+  display: flex;
+  margin-top: 20px;
+  width: 300px;
+}
+
+.image-area {
+  max-height: 50%;
+  max-width: 50%;
+}
