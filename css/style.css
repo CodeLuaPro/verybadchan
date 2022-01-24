@@ -4,7 +4,7 @@ body {
   margin: 0;
   color: greenyellow;
 }
-h5 {
+#h5 {
   margin: 0;
 }
 
@@ -35,7 +35,7 @@ ul {
 }
 
 .select-theme {
-  position:absolute;
+  position:fixed;
   top:100vh;
   transform:translateY(-100%);
 }
@@ -49,4 +49,9 @@ ul {
 .image-area {
   max-height: 50%;
   max-width: 50%;
+}
+
+.image-area-expanded {
+  max-height: 100%;
+  max-width: 100%;
 }

@@ -5,6 +5,8 @@ const textArea = document.querySelector("#comment");
 const imgArea = document.createElement("img");
 var uploadedImage = "";
 
+
+
 imgArea.setAttribute("class", "image-area");
 
 imageDiv.setAttribute("class", "uploaded-image-div");
@@ -21,6 +23,15 @@ submitButton.addEventListener("click", function(){
       imgArea.setAttribute("src", this.result);
     });
     reader.readAsDataURL(file);
-    document.body.appendChild(imageDiv);
+
   }
+  document.body.appendChild(imageDiv);
 });
+
+imgArea.addEventListener("click", () => {
+  if (imgArea.className == "image-area") {
+    imgArea.className = "image-area-expanded";
+  } else {
+    imgArea.className = "image-area";
+  }
+})

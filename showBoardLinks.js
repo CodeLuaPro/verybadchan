@@ -1,7 +1,12 @@
 let boardArray = [];
-let p5Tag = document.querySelector("#p5");
+const h5Element = document.createElement("p5");
 let boardContainer = document.createDocumentFragment();
 let joiner = " / ";
+const boardLinksDiv = document.querySelector(".board-links")
+
+h5Element.setAttribute("id", "h5");
+
+boardLinksDiv.appendChild(h5Element);
 
 let mmoboard = document.createElement("a");
 mmoboard.innerText = "mmo";
@@ -25,7 +30,7 @@ gameDevBoard.innerText = "gamedev";
 boardArray.push(mmoboard, rpgboard, mmorpgboard, oldSchoolRpgBoard, gamingboard, gameDevBoard);
 
 boardArray.forEach((e) => {
-  boardContainer.appendChild(e);
-  boardContainer.append(joiner);
+  h5Element.appendChild(e);
+  h5Element.append(joiner);
+
 })
-p5Tag.appendChild(boardContainer);
